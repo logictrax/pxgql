@@ -1,0 +1,30 @@
+{
+  "name": "pxgql",
+  "version": "1.0.0",
+  "description": "Procedural Extension to GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logictrax/pxgql.git"
+  },
+  "keywords": [
+    "graphql",
+    "gql",
+    "procedural"
+  ],
+  "author": "TOPHAT LTD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logictrax/pxgql/issues"
+  },
+  "homepage": "https://github.com/logictrax/pxgql#readme",
+  "workspaces": [
+    "pxgql-lang",
+    "pxgql-js",
+    "pxgql-py",
+    "pxgql-cs"
+  ]
+}

@@ -1,0 +1,23 @@
+procedure {
+  query currentTime getTime() {
+    hour
+    minutes
+  }
+
+  procedure getTime(): CurrentTime {
+    getDate() => timestamp
+    getHourFromTimestamp(timestamp: $timestamp) => hour
+    getMinutesFromTimeStamp(timestamp: $timestamp) => minutes
+
+    conditionalResolverThatReturnsTruthy() ? anotherProc() => result
+    
+    switch {
+      conditionalResolverThatReturnsTruthy() ? anotherProc() => result
+      defaultResolver() => result
+    }
+
+  } => {
+    hour
+    minute
+  }
+} => { currentTime }
